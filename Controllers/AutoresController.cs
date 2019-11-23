@@ -36,7 +36,7 @@ namespace MiPrimerWebApi.Controllers
         
         [HttpGet("{id}/{nombre?}", Name="ObtenerAutor")] //GET /api/autores/5/juan?
         /*Puedo enviar tantos parametros como desee por la URL (opcionales o no).
-            Si quiero ponerle un valor por defecto solo hago {nombre=valor}
+        Si quiero ponerle un valor por defecto solo hago {nombre=valor}
         */
         public ActionResult<Autor> Get(int id, string nombre)
         {
